@@ -20,7 +20,7 @@ def random_choice(type):
     #Pick A Random Adjective
     if type == "adjective":
         #Open Adjective File
-        with open("M:/1syllableadjectives.txt", "r") as file: 
+        with open("1syllableadjectives.txt", "r") as file: 
             read_doc = file.read() 
             words = list(map(str, read_doc.split())) 
             return(random.choice(words))
@@ -29,7 +29,7 @@ def random_choice(type):
     elif type == "verbs":
         
         #Open Verbs File
-        with open("M:/1syllableverbs.txt", "r") as file: 
+        with open("1syllableverbs.txt", "r") as file: 
             read_doc = file.read() 
             words = list(map(str, read_doc.split())) 
             return(random.choice(words))
@@ -38,7 +38,7 @@ def random_choice(type):
     else:
         
         #Open Nouns File
-        with open("M:/1syllablenouns.txt", "r") as file: 
+        with open("1syllablenouns.txt", "r") as file: 
             read_doc = file.read() 
             words = list(map(str, read_doc.split())) 
             return(random.choice(words))
