@@ -57,7 +57,7 @@ def return_poem(peom_type, adjective_1,
                 and a {verb_2} {verb_2} there,
                 here a {verb_1}, there a {verb_2},
                 everywhere a {verb_1} {verb_1},
-                Old {adjective_2} McDonald had a {noun_1}, E-I-E-I-O.''')
+                Old {adjective_2} McDonald had a {noun_1}, {sound}.''')
     
     elif poem_type == "Humpty Dumpty":      
         st.write(f'''Humpty Dumpty {verb_1} on a wall.
@@ -72,6 +72,7 @@ def return_poem(peom_type, adjective_1,
         
 #Titles     
 st.header("Madlibs")
+st.subheader("By Joti Gokaraju")
 st.divider()
 
 
@@ -97,7 +98,7 @@ if poem_type == "Old McDonald":
     verb_2 = st.text_input("Chose Another Verb (Sound Verb):", value="")
     noun_1 = st.text_input("Chose A Noun (Object or Animal):", value="")
     noun_2 = st.text_input("Chose Another Noun (Object or Animal):", value="")
-    sound = st.text_input("Chose A Sound:", value="")
+    sound = st.text_input("Chose A Sound (like E-I-E-I-O):", value="")
 
 #Collect Variables for Humpty Dumpty
 elif poem_type == "Humpty Dumpty":
